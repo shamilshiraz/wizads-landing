@@ -1,0 +1,59 @@
+/* App.css */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the video */
+  color: white;
+  top: 20%;
+  width: 100vw;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.top{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+
+}
+img{
+  height: 200px;
+  width: 400px;
+  scale: 1.5;
+
+}
+.wizads{
+  font-size: 42px;
+}
+body{
+  font-family:'helvetica';
+}
+.middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 0px;
+}
+.des{
+  font-size: 64px;
+}
